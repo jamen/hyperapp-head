@@ -1,0 +1,8 @@
+{
+    "name": "@finepoint/hyperapp-head",
+    "author": "Jamen Marz <me@jamenmarz.com>",
+    "description": "Patch Hyperapp <head> nodes.",
+    "main": "src/head.js",
+    "version": "0.1.0",
+    "repository": "https://github.com/finepoint-dev/hyperapp-head"
+}
