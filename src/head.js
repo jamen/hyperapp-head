@@ -21,7 +21,7 @@ export const mergeHead = (targetHead, head) => {
     for (const meta of head.children) {
         for (const targetMeta of targetHead.children) {
             if (targetMeta.nodeName === 'title' && meta.nodeName === 'title') {
-                targetMeta.children.push(...meta.children)
+                targetMeta.children = [ ...meta.children ]
                 Object.assign(targetMeta.attributes, meta.attributes)
             } if (testMetaKeys(targetMeta, meta)) {
                 Object.assign(targetMeta.attributes, meta.attributes)
